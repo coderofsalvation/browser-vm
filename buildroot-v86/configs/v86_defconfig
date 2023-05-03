@@ -1,3 +1,4 @@
+# see https://github.com/buildroot/buildroot/tree/master/packages
 BR2_x86_pentiumpro=y
 BR2_CCACHE=y
 BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_4_19=y
@@ -13,6 +14,9 @@ BR2_PACKAGE_NANO=y
 BR2_TARGET_ROOTFS_INITRAMFS=y
 BR2_TARGET_ROOTFS_ISO9660=y
 BR2_TARGET_SYSLINUX=y
+
+BR2_PACKAGE_UNZIP=y
+BR2_PACKAGE_ZIP=y
 
 # If you want to add the nled editor, uncomment NLED + NCURSES
 #BR2_PACKAGE_NCURSES=y
