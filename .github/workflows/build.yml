@@ -12,6 +12,9 @@ on:
 
 jobs:
   build:
-    runs:
-      using: 'docker'
-      image: 'Dockerfile'
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v3
+    - name: Build docker images
+      run: ./build.sh 
+
